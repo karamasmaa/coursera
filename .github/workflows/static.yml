@@ -1,43 +1,149 @@
-# Simple workflow for deploying static content to GitHub Pages
-name: Deploy static content to Pages
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>KARAM ASMAA</title>
+</head>
+<body>
 
-on:
-  # Runs on pushes targeting the default branch
-  push:
-    branches: ["main"]
+    <header>
+        <a href="#" class="logo">Karam</a>
+        <nav class="navigation">
+            <a href="#WORK EXPERIENCE">WORK EXPERIENCE</a>
+            <a href="#EDUCATION">EDUCATION</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
 
-  # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
+    <section class="main">
+        <div>
+            <h2>Hello, I'm KARAM ASMAA<br><span>IT engineer</span></h2>
+            <h3>April 25, 1996</h3>
+            <a href="#EDUCATION" class="main-btn">View my work</a>
+            
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </section>
 
-# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
-permissions:
-  contents: read
-  pages: write
-  id-token: write
+    <section class="cards" id="WORK EXPERIENCE">
+        <h1 class="title">WORK EXPERIENCE</h1>
+        <div class="content">
+            <div class="card-container">
+                <div class="card">
+                    <div class="icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
 
-# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
-# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
-concurrency:
-  group: "pages"
-  cancel-in-progress: false
+                    <div class="info">
+                        <h3>Genesis System</h3>
+                        <p>
+                            <br>Customer Relation Management at Genesis-System company</br>
+                            <br>I worked on creating a complete system.</br>
+                            <br>Communicate with customers, solve their problems and make adjustments to them</br>
+                            <br>Create a workflow that meets the needs of customers</br>
+                            <br>Create connections with social media programs</br>
+                            <br>Create a site on BiTRIX24 and make all modifications.</br>
+                            <br>Provided first-level technical support for end-users, resolving hardware and software issues in a timely manner.</br>
+                            <br>Create a complete system on ON-PREMISE BY VM-WARE.</br>
+                            <br>Good knowledge in Dart language, capable of creating mobile applications that meet the client needs.</br>
 
-jobs:
-  # Single deploy job since we're just deploying
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-      - name: Setup Pages
-        uses: actions/configure-pages@v3
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v2
-        with:
-          # Upload entire repository
-          path: '.'
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v2
+
+                        </p>
+                    </div>
+                </div>
+    
+                <div class="card">
+                    <div class="icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <div class="info">
+                        <h3>Valencia Theater Seating</h3>
+                        <p>
+                            <br>Sales Associate, Valencia Theater Seating, Canada 
+                            Assisted customers in selecting theater seating options and achieved monthly sales targets.</br>
+                            <br>Customer Service Representative, Valencia Theater Seating, Canada 
+                            Resolved customer inquiries, provided product support, and ensured high customer satisfaction.</br>
+                            <br>Inventory Management, Valencia Theater Seating, Canada 
+                            Collaborated with the sales department to manage inventory and ensure timely order fulfillment.</br>
+                            <br>Team Collaboration, Valencia Theater Seating, Canada 
+                            Worked effectively with the sales department to meet operational goals and improve efficiency.</br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+
+    <section class="EDUCATION" id="EDUCATION">
+        <h1 class="title">EDUCATION</h1>
+        <div class="content">
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="images/work1.jpg" alt="Project 1 Image" />
+                </div>
+                <div class "project-info">
+                    <p class="project-category"></p>
+                    <strong class="project-title">
+                        <span>Dev Books</span>
+                        <a href="#" class="more-details">More details</a>
+                    </strong>
+                </div>
+            </div>
+            <!-- Repeat the project cards for other projects -->
+        </div>
+    </section>
+
+    <section class="cards contact" id="contact">
+        <h2 class="title">Contact Information</h2>
+        <div class="content">
+            <div class="card">
+                <div class="icon">
+                    <i class="fas fa-phone"></i>
+                </div>
+                <div class="info">
+                    <h3>Phone</h3>
+                    <p>+90 551 397 29 92</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="icon">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <div class="info">
+                    <h3>Email</h3>
+                    <p>Karam.asm@hotmail.com</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="icon">
+                    <i class="fas fa-location-arrow"></i>
+                </div>
+                <div class="info">
+                    <h3><address>Address</address></h3>
+                    <p>134406 Bahçe St., Istanbul/Kağıthane</p>
+                </div>
+            </div>
+            </div>
+            </section>
+            
+            <footer class="footer">
+                <p class="footer-title"> <span>KARAM ASMAA</span></p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                </div>
+            </footer>
+            
+            </body>
+            </html>
